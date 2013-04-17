@@ -24,12 +24,12 @@ Upon each poll, the API will send an array of objects to your callback function.
 
 The leaderboard that you build should satisfy these basic requirements:
 
-* Visually adhere to the provided [PSD](AwesomeBands.psd). You can use an image for the heading, tile the background, and center the module horizontally on the page (it doesn't need to be vertically centered).
-* Each time that data is loaded, update the leaderboard to show the latest band names and counts, sorted descending by count.
+* Visually adhere to the provided [PSD](AwesomeBands.psd).
+* Every 15 seconds, update the leaderboard to show the latest band names and counts, sorted descending by count.
 * **Bonus:** Animate the leaderboard update in some way (fade/dissolve, sliding, etc.).
 
 When you're finished, please send your work your Mass Relevance dev contact as a .zip file or (preferably) a link to a public repo on GitHub.
 
 ## Questions?
 
-Please email your Mass Relevance dev contact if you have any questions or concerns. There are no bad questions (other than "What does JavaScript mean?).
+Please use your best judgment to interpret the requirements above. However, if you're stuck with a question(s), feel free to email your Mass Relevance dev contact. There are no bad questions (other than, "What does JavaScript mean?").

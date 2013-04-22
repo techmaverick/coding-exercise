@@ -23,7 +23,7 @@ class Poller
 
   sortData = (data) -> data.sort (a, b) -> b.count - a.count
 
-  getData: -> ({ name: awesomeBand, count: getRandomNumber 0, 1000 } for awesomeBand in @awesomeBands)
+  getData: -> ({ name: awesomeBand, count: getRandomNumber 0, 2000 } for awesomeBand in @awesomeBands)
 
   processData: -> sortData(@getData()).slice 0, @config.limit
 

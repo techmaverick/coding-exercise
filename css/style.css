@@ -1,0 +1,100 @@
+/*
+ * Created by Chris Armstrong (TechMaverick LLC) - in sunny ATX
+ *I actually liked some of these bands back in high school (what was I thinking?), but putting Creed on an awesome bands list is criminal :)
+*/
+
+
+/*
+ * Font Styles, including heading style from Google Fonts (using instead of png image from PSD, actual text is better for SEO)
+*/
+
+h1, h2, h3, h4, h5{
+	font-family: 'Revalia', cursive;
+	color: white;
+	/*Drop-Shadow effect doesn't gel with gradient so keeping one or the other: text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);*/
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h1{
+	font-size: 3em;
+}
+
+p, body, .highlight{
+	/*Helvetica Bold is default from PSD*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+span.highlight{
+	color:#9e0b0f;
+}
+
+span.mentions{
+	/*Helvetica Light*/
+	font-size:.8em;
+	font-weight: 200;
+}
+
+/*
+ * Main Page Container, Boxes, Cards and basic fluid Responsiveness (no time for media queries) using % widths
+ * Started with nice and fluid setup, but switched to fixed-size container to best match PSD per requirement
+*/
+.container{
+	width:800px;
+	height: 600px;
+	/*
+	*Commented out fluid container to more exactly match fixed pixel PSD design
+	width: auto;
+	min-height: 600px;
+	*/
+	padding: 20px;
+	text-align: center;
+	background: #232323 url("../images/bg.png") repeat;
+	margin-bottom: 0px;
+	color: white;
+}
+
+.title{
+	padding-top: 100px;
+}
+
+.leaderboard {
+  margin-left:auto;
+  margin-right:auto;
+  width: 60%;
+  min-height: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(31, 31, 31);
+  background-color: rgba(31, 31, 31, 0.85);
+  border: 6px solid #cccccc;
+  border-radius: 22px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.band-name{
+	font-weight: 600;
+	float: left;
+	margin-left: 10px;
+}
+
+.mention-count{
+	float:right;
+	margin-right:10px;
+}
+
+.clear-float
+{
+	clear:both;
+}
+
+.band-details{
+	border-bottom: 1px solid #666666;
+	padding: 12px;
+}
+
+.band-details:last-child{
+	border-bottom: none;
+}

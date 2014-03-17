@@ -11,7 +11,7 @@ $(function() {
   	//load HTML into leaderboard div with each top band's name and mention count
   	awesomeBands.forEach(function(band) {
   		htmlContent+= '<div class="band-details"><div class="band-name">' + band.name + 
-  		'</div><div class="mention-count"><span class="highlight">' + band.count + 
+  		'</div><div class="mention-count"><span class="highlight">' + numberWithCommas(band.count) + 
   		'</span> <span class="mentions">Mentions</span></div><div class="clear-float"></div></div>';
   	});
   	//Hide first, so animation is possible
@@ -24,3 +24,8 @@ $(function() {
   bandList.start();
 
 });
+
+//Quick RegEx function I got off of Google to add commas to 'mention' counts to match PSD
+function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
